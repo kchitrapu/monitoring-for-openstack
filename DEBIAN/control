@@ -3,7 +3,7 @@ Priority: optional
 Section: misc
 Version: <VERSION>
 Architecture: amd64
-Maintainer: 
+Maintainer: monitoring-for-openstack@github.com
 Depends: python
 Description: OpenStack monitoring component
 
