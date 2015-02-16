@@ -1,0 +1,9 @@
+Package: monitoring-for-openstack
+Priority: optional
+Section: misc
+Version: <VERSION>
+Architecture: amd64
+Maintainer: 
+Depends: python
+Description: OpenStack monitoring component
+
