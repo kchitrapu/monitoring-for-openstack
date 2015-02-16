@@ -4,7 +4,7 @@ PKG_DIR := $(DESTDIR)/$(PKG_NAME)
 DEB_CTL_DIR := $(PKG_DIR)/DEBIAN
 ETC_DIR := $(PKG_DIR)/etc
 PY_PKGS := $(PKG_DIR)/usr/lib/python2.7/dist-packages/oschecks
-OSCHECKS := 1.0
+VERSION := 1.0
 
 .PHONY: all
 all: 
