@@ -4,6 +4,7 @@ PKG_DIR := $(DESTDIR)/$(PKG_NAME)
 DEB_CTL_DIR := $(PKG_DIR)/DEBIAN
 ETC_DIR := $(PKG_DIR)/etc
 PY_PKGS := $(PKG_DIR)/usr/lib/python2.7/dist-packages/oschecks
+OSCHECKS := 1.0
 
 .PHONY: all
 all: 
@@ -21,8 +22,7 @@ installdirs:
 package: installdirs
 	cp DEBIAN/* $(DEB_CTL_DIR)
 	sed -i "s/<VERSION>/$(VERSION)/" $(DEB_CTL_DIR)/control
-	cp -R etc/* $(ETC_DIR)
-	cp -R pylib/* $(PY_PKGS)
+	cp -R oschecks/* $(PY_PKGS)
 	fakeroot dpkg -b $(PKG_DIR) $(DESTDIR)/$(PKG_NAME).deb
 
 .PHONY: packageclean
