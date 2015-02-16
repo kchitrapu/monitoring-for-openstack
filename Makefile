@@ -1,4 +1,4 @@
-PKG_NAME := ostack-monitoring
+PKG_NAME := ostack-monitor
 DESTDIR ?= $(CURDIR)/output
 PKG_DIR := $(DESTDIR)/$(PKG_NAME)
 DEB_CTL_DIR := $(PKG_DIR)/DEBIAN
